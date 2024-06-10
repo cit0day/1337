@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1337</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">CC Generator</a></li>
+                        <li><a href="checker.html">CC Checker</a></li>
+                        <li><a href="youtube.html">Youtube Mp3 Downloader</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <form id="download-form">
+                <label for="video-url">YouTube Video URL:</label>
+                <input type="text" id="video-url" placeholder="Enter YouTube URL">
+                <button type="submit">Download MP3</button>
+            </form>
+            <div id="results">
+                <p id="status-message"></p>
+                <a id="download-link" href="#" download hidden>Download Your MP3</a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 1337. All rights reserved
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

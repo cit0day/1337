@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1337</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">CC Generator</a></li>
+                    <li><a href="checker.html">CC Checker</a></li>
+                    <li><a href="youtube.html">Youtube Mp3 Downloader</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+        <main>
+            <div class="content">
+                <section id="cc-checker">
+                    <div class="container">
+                        <h2>CC Checker</h2>
+                        <form id="cc-form">
+                            <label for="bin">Enter BIN:</label>
+                            <input type="text" id="bin" name="bin" required maxlength="6">
+                            <label for="quantity">Number of Cards:</label>
+                            <input type="number" id="quantity" name="quantity" required min="1" max="50000">
+                            <button type="submit">Generate</button>
+                            <button type="button" id="save-btn">Save</button>
+                        </form>
+                        <div id="results"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 1337. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

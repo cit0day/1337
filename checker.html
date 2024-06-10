@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1337</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">CC Generator</a></li>
+                    <li><a href="checker.html">CC Checker</a></li>
+                    <li><a href="youtube.html">Youtube Mp3 Downloader</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+        <main>
+            <div class="content">
+                <section id="cc-checker">
+                    <div class="container">
+                        <h2>Check Credit Card</h2>
+                        <form id="cc-form">
+                            <label for="card-number">Enter Card Number:</label>
+                            <input type="text" id="card-number" name="card-number" required maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+                            <label for="expiry">Expiry Date:</label>
+                            <input type="text" id="expiry" name="expiry" required maxlength="5" placeholder="MM/YY">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" required maxlength="3" placeholder="XXX">
+                            <button type="submit">Check</button>
+                        </form>
+                        <h3>Or Upload File:</h3>
+                        <input type="file" id="file-upload" accept=".txt,.csv">
+                        <button id="upload-btn">Check File</button>
+                        <div id="results">
+                            <!-- Results will be displayed here -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 1337. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/cc-checker.js"></script>
+</body>
+</html>
